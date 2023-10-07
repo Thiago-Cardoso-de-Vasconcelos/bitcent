@@ -1,3 +1,5 @@
+import { IconArrowRight, IconVideo } from '@tabler/icons-react'
+
 export default function Slogan() {
     function renderizarFrase() {
       return (
@@ -40,6 +42,39 @@ export default function Slogan() {
       );
     }
   
-    return <div>{renderizarFrase()}</div>;
+    return (
+    <div className="flex flex-col justify-center gap-5">
+            {renderizarFrase()}
+            <div className="text-sm lg:text-lg font-thin text-zinc-500 text-center sm:text-left">
+                Plataforma financeira que simplifica sua vida!
+            </div>
+            <div className="flex justify-center sm:justify-start items-center gap-2">
+                <div
+                    className={`
+                        flex items-center gap-2 cursor-pointer
+                        bg-gradient-to-r from-indigo-600 to-cyan-600
+                        text-white px-5 py-2.5 rounded-md
+                    `}
+                  
+                >
+                    <span className="font-thin md:text-sm text-base">
+                        Iniciar <span className="hidden sm:inline">Agora</span>
+                    </span>
+                    <IconArrowRight className="hidden lg:inline" stroke={1} />
+                </div>
+                <div
+                    className={`
+                    flex items-center gap-2 cursor-pointer
+                    text-zinc-300 px-5 py-2.5
+                `}
+                >
+                    <IconVideo stroke={1} />
+                    <span className="font-thin md:text-sm text-base">
+                        <span className="hidden sm:inline">Assista o</span> Vídeo
+                    </span>
+                </div>
+            </div>
+        </div>
+    )
   }
   

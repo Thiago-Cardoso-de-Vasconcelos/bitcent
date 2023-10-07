@@ -1,5 +1,7 @@
 import Area from "../comum/Area";
 import Slogan from "./Slogan";
+import principal from "../../../../public/principal.jpg"
+import ImagemResponsiva from "../comum/ImagemResponciva";
 
 export default function Destaque() {
   return (
@@ -7,10 +9,16 @@ export default function Destaque() {
       <div
         className={`
             flex items-center
+            justify-around
              h-[500px]
             `}
       >
         <Slogan />
+        <ImagemResponsiva
+         imagem={principal}
+         className="rotate-3 hidden md:inline-block"
+
+        />
       </div>
     </Area>
   );
