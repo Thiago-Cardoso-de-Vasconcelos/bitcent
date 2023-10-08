@@ -1,5 +1,5 @@
 import Cabecalho from "./cabecalho";
-import Depoimentos from "./depoimentos";
+import Depoimentos from "./Depoimentos";
 import Destaque from "./destaque";
 import Rodape from "./rodape";
 import Vantagens from "./vantagens";
