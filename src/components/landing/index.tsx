@@ -7,7 +7,7 @@ import Pagina from "@/components/template/Pagina";
 
 export default function Landing () {
     return (
-        <Pagina>
+        <Pagina externa>
             <Cabecalho/>
             <Destaque/>
             <Vantagens/>
