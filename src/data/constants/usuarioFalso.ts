@@ -3,7 +3,7 @@ import Usuario from "@/logic/core/usuario/Usuario";
 
 export default {
     id: Id.novo(),
-    nome: 'Usuário Falso',
-    email: 'joao@xmail.com',
+    nome: 'João da Silva',
+    email: 'jjjjoao@xmail.com',
     imagemUrl: null,
 } as Usuario

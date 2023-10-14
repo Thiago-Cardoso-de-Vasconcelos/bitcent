@@ -1,13 +1,12 @@
 import Area from "../comum/Area";
-import Vantagem from "./Vantagem";
 import vantagem1 from "../../../../public/vantagem-1.jpg"
 import vantagem2 from "../../../../public/vantagem-2.jpg"
 import vantagem3 from "../../../../public/vantagem-3.jpg"
+import Vantagem from "./Vantagem";
 
-export default function Vantagens () {
+export default function Vantagens() {
     return (
-        <Area id="vantagens" className=" bg-black py-16 sm:py-36">
-            
+        <Area id="vantagens" className="bg-black py-16 sm:py-36">
             <div className="flex flex-col items-center gap-y-16 sm:gap-y-36">
                 <Vantagem
                     imagem={vantagem1}
@@ -27,7 +26,6 @@ export default function Vantagens () {
                     subtitulo="Nosso princípio número 1 é ser uma plataforma que torne o controle financeiro simples, então o planejamento se torna algo natural!"
                 />
             </div>
-            
         </Area>
     )
 }

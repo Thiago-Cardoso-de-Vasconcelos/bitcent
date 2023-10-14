@@ -1,18 +1,18 @@
+import Pagina from "../template/Pagina";
 import Cabecalho from "./cabecalho";
-import Depoimentos from "./Depoimentos";
+import Depoimentos from "./depoimentos";
 import Destaque from "./destaque";
 import Rodape from "./rodape";
 import Vantagens from "./vantagens";
-import Pagina from "@/components/template/Pagina";
 
-export default function Landing () {
+export default function Landing() {
     return (
         <Pagina externa>
-            <Cabecalho/>
-            <Destaque/>
-            <Vantagens/>
-            <Depoimentos/>
-            <Rodape/>
+            <Cabecalho />
+            <Destaque />
+            <Vantagens />
+            <Depoimentos />
+            <Rodape />
         </Pagina>
     )
 }

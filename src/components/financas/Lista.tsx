@@ -1,15 +1,14 @@
-import Transacao from "@/logic/core/financas/Transacao";
-import Data from "@/logic/utils/Data";
-import Dinheiro from "@/logic/utils/Dinheito";
-import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react";
+import Transacao from "@/logic/core/financas/Transacao"
+import Data from "@/logic/utils/Data"
+import Dinheiro from "@/logic/utils/Dinheiro"
+import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react"
 
 interface ListaProps {
-  transacoes: Transacao[];
-  selecionarTransacao?: (transacao: Transacao) => void
+    transacoes: Transacao[]
+    selecionarTransacao?: (transacao: Transacao) => void
 }
 
 export default function Lista(props: ListaProps) {
-
     function renderizarTipo(transacao: Transacao) {
         return (
             <span className={`
@@ -38,12 +37,12 @@ export default function Lista(props: ListaProps) {
         )
     }
 
-  return (
-    <div className={`
-    flex flex-col border border-zinc-700
-    rounded-xl overflow-hidden
-`}>
-    {props.transacoes.map(renderizarLinha)}
-</div>
-  );
+    return (
+        <div className={`
+            flex flex-col border border-zinc-700
+            rounded-xl overflow-hidden
+        `}>
+            {props.transacoes.map(renderizarLinha)}
+        </div>
+    )
 }

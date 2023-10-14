@@ -1,3 +1,4 @@
+import ForcarAutenticacao from "../autenticacao/ForcarAutenticacao"
 
 interface PaginaProps {
     externa?: boolean
@@ -6,15 +7,21 @@ interface PaginaProps {
 }
 
 export default function Pagina(props: PaginaProps) {
-    return (
-        <div className={`
-            flex flex-col min-h-screen
-            bg-gradient-to-r from-zinc-900 via-black to-zinc-900
-            ${props.className ?? ''}
-       `}>
+    function renderizar() {
+        return (
+            <div className={`
+                flex flex-col min-h-screen
+                bg-gradient-to-r from-zinc-900 via-black to-zinc-900
+                ${props.className ?? ''}
+            `}>
+                {props.children}
+            </div>
+        )
+    }
 
-            {props.children}
-        </div>
-
+    return props.externa ? renderizar() : (
+        <ForcarAutenticacao>
+            {renderizar()}
+        </ForcarAutenticacao>
     )
 }
