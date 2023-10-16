@@ -17,14 +17,15 @@ Projeto foi desenvolvido durante a [Semana Tranformação.DEV,](https://www.inst
 # Tecnologias
 Lista de tecnologias utilizadas no projeto:
 
-[React](https://react.dev/)
-[Next.js](https://nextjs.org/)
-[Firebase](https://firebase.google.com/?hl=pt-br)
-[TypeScript](https://www.typescriptlang.org/)
-[TailwindCSS](https://tailwindcss.com/)
-[Mantine](https://mantine.dev/)
+[React](https://react.dev/)<br>
+[Next.js](https://nextjs.org/)<br>
+[Firebase](https://firebase.google.com/?hl=pt-br)<br>
+[TypeScript](https://www.typescriptlang.org/)<br>
+[TailwindCSS](https://tailwindcss.com/)<br>
+[Mantine](https://mantine.dev/)<br>
 
 # Demonstração
+[Link](https://bitcent-2lzh-e4jwcyme4-thiago-cardoso-de-vasconcelos.vercel.app/)
 
 Resultado:
 <p align="center">
